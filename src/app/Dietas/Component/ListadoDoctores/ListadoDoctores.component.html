@@ -1,0 +1,11 @@
+<select
+  class="form-select form-select-lg listaDieta custom-select custom-select-lg obligatorio"
+  id="selDoctor"
+  data-nombre="Doctor"
+  required
+>
+  <option></option>
+  @for (Doctor of listadoDoctores; track $index) {
+  <option>{{ Doctor.nombre }}</option>
+  }
+</select>

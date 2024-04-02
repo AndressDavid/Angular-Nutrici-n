@@ -1,0 +1,11 @@
+<select
+  class="form-select form-select-lg listaDieta custom-select custom-select-lg obligatorio"
+  id="selDieta"
+  data-nombre="Dieta"
+  required
+>
+  <option></option>
+  @for (Dieta of listadoDietas; track $index) {
+  <option>{{ Dieta.descripcion }}</option>
+  }
+</select>
